@@ -54,7 +54,7 @@ function openGameRequest(value) {
   const form = new FormData();
   form.append("playerID", value);
     axios
-      .post("http://18.220.1.85/validate", form)
+      .post("http://3.17.135.216/validate", form)
       // .post("http://localhost/validate", form)
       .then(function (response) {
         // console.log(response)
