@@ -57,8 +57,8 @@ function openGameRequest(value) {
       .post("http://3.17.135.216:7901/validate", form)
       // .post("http://localhost/validate", form)
       .then(function (response) {
-        console.log(response)
-        window.location.href = 'https://dev-web-game-fe.dvweg.com/?token='+ response.data.token +'&operator=agofhjg0'
+        // console.log(response)
+        window.location.href = 'https://dev-web-game-fe.dvweg.com/?token='+ response.data.playerID +'&operator=agofhjg0'
       })
       .catch(function (error) {
         console.log(error)
